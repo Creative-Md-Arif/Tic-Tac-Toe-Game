@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,500;6..12,600;6..12,700;6..12,800;6..12,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+ }
+
+
+ a{
+    display: inline-block;   
+    text-decoration: none;
+ }
+
+ ul,ol{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+ }
+
+ p,h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding: 0;
+ }
+
+ body{
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: rgb(34, 28, 28);
+
+ }
+
+ .gamebox{
+   text-align: center;
+ }
+
+ .gamebox h1{
+   text-transform: uppercase;
+   padding-bottom: 40px;
+   font-size: 400;
+   font-weight: 400;
+   font-family: "Finger Paint", sans-serif;
+   color: aliceblue;
+   
+
+ }
+
+
+.main{
+   display: flex;
+   flex-wrap: wrap;
+   width: 450px;
+ 
+  
+}
+
+
+
+.box{
+   height: 33.33;
+   width: 33.33%;
+   font-size: 120px;
+   background-color: rgb(34, 28, 28);
+   border: 2px solid aliceblue;
+   color:aliceblue;
+}
+
+
+
+.box:nth-child(3n){
+   border-right: none;
+   border-left: none;
+}
+
+.box:nth-child(2n){
+   border-top: none;
+   border-left: none;
+}
+
+.box:nth-child(1n){
+   border-top: none;
+   border-left: none;
+}
+
+
+.box:nth-child(6) ~ .box{
+   border-bottom: none;
+}

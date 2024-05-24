@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+ }
+
+
+ a{
+    display: inline-block;   
+    text-decoration: none;
+ }
+
+ ul,ol{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+ }
+
+ p,h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding: 0;
+ }
+
+ body{
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: rgb(34, 28, 28);
+
+ }
+
+ .gamebox{
+   text-align: center;
+ }
+
+ .gamebox h1{
+   text-transform: uppercase;
+   padding-top: 100px;
+   padding-bottom: 40px;
+   font-size: 400;
+   font-weight: 400;
+   font-family: "Finger Paint", sans-serif;
+   color: aliceblue;
+   
+
+ }
+
+
+.main{
+   display: flex;
+   flex-wrap: wrap;
+   width: 450px;
+
+ 
+  
+}
+
+
+
+.box{
+   height: 33.33;
+   width: 33.33%;
+   font-size: 100px;
+   background-color: rgb(34, 28, 28);
+   border: 2px solid aliceblue;
+   color:aliceblue;
+}
+
+
+
+.box:nth-child(3n){
+   border-right: none;
+   border-left: none;
+}
+
+.box:nth-child(2n){
+   border-top: none;
+   border-left: none;
+}
+
+.box:nth-child(1n){
+   border-top: none;
+   border-left: none;
+}
+
+
+.box:nth-child(6) ~ .box{
+   border-bottom: none;
+}
+
+
+
+
+
+
+.restartbtn{
+    margin-top: 30px;
+    border: none;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    background-color: aliceblue;
+    font-size: 30px;
+    font-weight: 400;
+    font-family: "Finger Paint", sans-serif;
+    border-radius:10px;
+    transition: .3s;
+
+}
+
+
+.restartbtn:hover{
+    background-color: blanchedalmond;
+    color: black;
+}
